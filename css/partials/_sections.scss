@@ -5,6 +5,9 @@
 .what-it-is--wrapper{
   position: relative;
 
+  .container{
+    padding: 0 15px;
+  }
   .what-it-is--pad{
     padding: 0;
   }
@@ -90,8 +93,20 @@
       }
     }
   }
-
+  @include tablet{
+    .what-it-is--wrapper{
+      .container{
+        padding: 0;
+      }
+      .hero-content--div{
+        padding: 0 29px;
+      }
+    }
+  }
   @include desktop{
+    .container{
+      padding: 0 15px;
+    }
     .hero-content--intro-mobile{
       display: none;
     }
@@ -120,6 +135,9 @@
   background: $background-color-submain;
   margin: -2px 0 0 0;
 
+  .container{
+    padding: 0 15px;
+  }
   h2{
     text-align: center;
     margin-top: 30px;
@@ -133,8 +151,15 @@
     margin: 25px auto;
     display: block;
   }
-
+  @include tablet{
+    .container{
+      padding: 0;
+    }
+  }
   @include desktop{
+    .container{
+      padding: 0 15px;
+    }
     .video-wrapper--content{
       h2{
         font-size: 17px;
@@ -244,7 +269,20 @@
       }
     }
   }
+  @include tablet{
+    .technology-wrapper{
+      padding: 70px 15px;
 
+      .howdoes-wrapper{
+        padding: 0 43px;
+      }
+    }
+    .phases-div--boxes{
+      .phase-1, .phase-2, .phase-3{
+        padding: 0 30px;
+      }
+    }
+  }
   @include desktop{
     .container{
       padding: 0 15px;
@@ -507,6 +545,7 @@
         font-size: 15px;
         border: 1px solid #ccc;
         padding: 20px;
+        margin: 0;
       }
       .testimonial-img{
         padding: 10px 0 0 0;
@@ -538,6 +577,22 @@
     }
     .carousel-slide.swiper-slide{
         height: 330px;
+    }
+  }
+  @include tablet{
+    .testimonial-carousel{
+      #triangle{
+        left: 219px;
+      }
+      .testimony-img{
+        margin: 0 0 0 201px;
+      }
+      .testimonial-first{
+        .testimony-text{
+          margin-left: 195px;
+          width: 40%;
+        }
+      }
     }
   }
   @include desktop{
@@ -656,6 +711,22 @@
     }
     p{
       color: $font-grey;
+    }
+  }
+  @include tablet{
+    .shipping-content{
+      .ship-desktop{
+        display: block;
+      }
+      .ship-mobile{
+        display: none;
+      }
+      .international-div{
+        width: 92%;
+      }
+      .within-us--div{
+        padding: 0 0 45px 30px;
+      }
     }
   }
   @include desktop{
