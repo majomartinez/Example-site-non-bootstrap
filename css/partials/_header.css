@@ -1,0 +1,54 @@
+/* Header CSS */
+/*  ***************************
+/*  Media queries
+/*  ---------------------------
+*******************************/
+/* Variable SCSS */
+.header-menu {
+  background: #82cec9;
+  color: #fff;
+}
+.header-menu .img-myskin.img {
+  max-width: 100px;
+  margin: 9px 10px;
+  width: 100%;
+}
+.header-menu .target-text {
+  font-weight: 300;
+  font-size: 11px;
+  padding: 15px 10px;
+}
+.header-menu .buynow-btn {
+  background: #f15c22;
+  text-align: center;
+  line-height: 56px;
+  text-decoration: none;
+  color: #fff;
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-menu .img-myskin.img {
+    margin: 9px 17px;
+  }
+  .header-menu .buynow-btn {
+    display: block;
+  }
+  .header-menu .target-text {
+    font-size: 17px;
+    line-height: 56px;
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  .header-menu .buynow-btn {
+    display: block;
+  }
+  .header-menu .target-text {
+    font-size: 17px;
+    line-height: 56px;
+    padding: 0;
+  }
+  .header-menu .img-myskin.img {
+    margin: 9px 50px;
+  }
+}
