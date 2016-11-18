@@ -448,6 +448,9 @@
 .testimonial-wrapper .testimonal-content .testomial-desc {
   padding: 10px 0 0 45px;
 }
+.testimonial-wrapper .testimonal-content .testomial-desc p {
+  color: #7e8082;
+}
 .testimonial-wrapper .testimonal-content .testomial-desc .nicole-txt {
   color: #f15c22;
   font-weight: 500;
