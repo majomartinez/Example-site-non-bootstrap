@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Sessions CSS */
 /*  ***************************
 /*  Media queries
@@ -87,7 +88,7 @@
   .what-it-is--wrapper .what-it-is--wrapper .container {
     padding: 0;
   }
-  .what-it-is--wrapper .what-it-is--wrapper .hero-content--div {
+  .what-it-is--wrapper .what-it-is--wrapper .hero-content--intro-mobile {
     padding: 0 29px;
   }
 }
@@ -119,9 +120,6 @@
   background: #e6f5f4;
   margin: -2px 0 0 0;
 }
-.video-wrapper .container {
-  padding: 0 15px;
-}
 .video-wrapper h2 {
   text-align: center;
   margin-top: 30px;
@@ -135,15 +133,7 @@
   margin: 25px auto;
   display: block;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .video-wrapper .container {
-    padding: 0;
-  }
-}
 @media (min-width: 992px) {
-  .video-wrapper .container {
-    padding: 0 15px;
-  }
   .video-wrapper .video-wrapper--content h2 {
     font-size: 17px;
     font-weight: 500;
@@ -424,6 +414,30 @@
   top: -14px;
   left: -12px;
 }
+.testimonial-wrapper .testimonal-content .testimony-text:before {
+  content: "";
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: .1em;
+  margin-right: .25em;
+  vertical-align: -.4em;
+}
+.testimonial-wrapper .testimonal-content .testimony-text {
+  quotes: "“" "”" "‘" "’";
+}
+.testimonial-wrapper .testimonal-content .testimony-txt:before {
+  content: "";
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: .1em;
+  margin-right: .25em;
+  vertical-align: -.4em;
+}
+.testimonial-wrapper .testimonal-content .testimony-txt {
+  quotes: "“" "”" "‘" "’";
+}
 .testimonial-wrapper .testimonal-content .testimonial-img {
   padding: 10px 0 0 0;
 }
@@ -477,6 +491,30 @@
   top: -14px;
   left: -12px;
 }
+.testimonial-wrapper .testimonial-carousel .testimony-text:before {
+  content: "";
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: .1em;
+  margin-right: .25em;
+  vertical-align: -.4em;
+}
+.testimonial-wrapper .testimonial-carousel .testimony-text {
+  quotes: "“" "”" "‘" "’";
+}
+.testimonial-wrapper .testimonial-carousel .testimony-txt:before {
+  content: "";
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: .1em;
+  margin-right: .25em;
+  vertical-align: -.4em;
+}
+.testimonial-wrapper .testimonial-carousel .testimony-txt {
+  quotes: "“" "”" "‘" "’";
+}
 .testimonial-wrapper .testimonial-carousel .what-expert {
   text-align: center;
   font-weight: 400;
@@ -507,9 +545,14 @@
   padding: 10px 0 0 45px;
   font-size: 15px;
 }
+.testimonial-wrapper .testimonial-carousel .testomial-desc p {
+  font-size: 14px;
+  color: #7e8082;
+}
 .testimonial-wrapper .testimonial-carousel .testomial-desc .nicole-txt {
   color: #f15c22;
   font-weight: 500;
+  text-align: left;
 }
 .testimonial-wrapper .testimonial-carousel .testimonial-first .testimony-text {
   width: 80%;

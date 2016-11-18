@@ -98,8 +98,8 @@
       .container{
         padding: 0;
       }
-      .hero-content--div{
-        padding: 0 29px;
+      .hero-content--intro-mobile{
+        padding: 0 29px
       }
     }
   }
@@ -135,9 +135,6 @@
   background: $background-color-submain;
   margin: -2px 0 0 0;
 
-  .container{
-    padding: 0 15px;
-  }
   h2{
     text-align: center;
     margin-top: 30px;
@@ -151,15 +148,7 @@
     margin: 25px auto;
     display: block;
   }
-  @include tablet{
-    .container{
-      padding: 0;
-    }
-  }
   @include desktop{
-    .container{
-      padding: 0 15px;
-    }
     .video-wrapper--content{
       h2{
         font-size: 17px;
@@ -475,6 +464,30 @@
       top: -14px;
       left: -12px;
     }
+    .testimony-text:before {
+        content: "";
+        color: #ccc;
+        content: open-quote;
+        font-size: 3em;
+        line-height: .1em;
+        margin-right: .25em;
+        vertical-align: -.4em;
+    }
+    .testimony-text {
+      quotes: "\201C""\201D""\2018""\2019";
+    }
+    .testimony-txt:before {
+        content: "";
+        color: #ccc;
+        content: open-quote;
+        font-size: 3em;
+        line-height: .1em;
+        margin-right: .25em;
+        vertical-align: -.4em;
+    }
+    .testimony-txt {
+      quotes: "\201C""\201D""\2018""\2019";
+    }
     .testimonial-img{
       padding: 10px 0 0 0;
     }
@@ -531,6 +544,30 @@
       top: -14px;
       left: -12px;
     }
+    .testimony-text:before {
+        content: "";
+        color: #ccc;
+        content: open-quote;
+        font-size: 3em;
+        line-height: .1em;
+        margin-right: .25em;
+        vertical-align: -.4em;
+    }
+    .testimony-text {
+      quotes: "\201C""\201D""\2018""\2019";
+    }
+    .testimony-txt:before {
+        content: "";
+        color: #ccc;
+        content: open-quote;
+        font-size: 3em;
+        line-height: .1em;
+        margin-right: .25em;
+        vertical-align: -.4em;
+    }
+    .testimony-txt {
+      quotes: "\201C""\201D""\2018""\2019";
+    }
     .what-expert{
       text-align: center;
       font-weight: 400;
@@ -562,9 +599,14 @@
       padding: 10px 0 0 45px;
       font-size: 15px;
 
+      p{
+        font-size: 14px;
+        color: $font-grey;
+      }
       .nicole-txt{
         color: $font-color-orange;
         font-weight: 500;
+        text-align: left;
       }
     }
     .testimonial-first{
