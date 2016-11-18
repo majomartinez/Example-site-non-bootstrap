@@ -394,6 +394,161 @@
     }
   }
 }
+.testimonial-wrapper{
+  padding: 0 0 50px;
+
+  .testimonal-content{
+    padding: 80px 10px 0 89px;
+    display: none;
+
+    .what-expert{
+      text-align: center;
+      padding: 0 0 115px 0;
+      font-weight: 500;
+      color: $font-color-orange;
+    }
+    .testimonial-first{
+      padding: 0 50px;
+
+      .testimony-text{
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 20px;
+      }
+    }
+    #triangle{
+      width: 0;
+      height: 0;
+      border-left: 13px solid transparent;
+      border-right: 13px solid transparent;
+      border-bottom: 13px solid transparent;
+      border-top: 13px solid #ccc;
+      position: relative;
+      left: 17px;
+    }
+    #triangle:after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid #fff;
+      position: absolute;
+      top: -14px;
+      left: -12px;
+    }
+    .testimonial-img{
+      padding: 10px 0 0 0;
+    }
+    .testimony-img{
+      height: 60px;
+      vertical-align: middle;
+    }
+    .testomial-desc{
+      padding: 10px 0 0 45px;
+
+      .nicole-txt{
+        color: $font-color-orange;
+        font-weight: 500;
+      }
+    }
+    .prod-bottle{
+      height: 220px;
+      margin: -73px 0 0 13px;
+    }
+    .testimonial-second{
+      padding: 0 50px;
+
+      .testimony-txt{
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 20px;
+      }
+      .testimonial-img{
+        padding: 10px 0 0 0;
+      }
+    }
+  }
+  .testimonial-carousel{
+    display: block;
+
+    #triangle{
+      width: 0;
+      height: 0;
+      border-left: 13px solid transparent;
+      border-right: 13px solid transparent;
+      border-bottom: 13px solid transparent;
+      border-top: 13px solid #ccc;
+      position: relative;
+      left: 17px;
+    }
+    #triangle:after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid #fff;
+      position: absolute;
+      top: -14px;
+      left: -12px;
+    }
+    .what-expert{
+      text-align: center;
+      font-weight: 400;
+      font-size: 21px;
+      color: $font-color-orange;
+    }
+    .testimonial-second{
+      padding: 40px 0 0 0;
+
+      .testimony-txt{
+        width: 80%;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        padding: 20px;
+      }
+      .testimonial-img{
+        padding: 10px 0 0 0;
+      }
+    }
+    .testimonial-img{
+      padding: 10px 0 0 0;
+    }
+    .testimony-img{
+      height: 60px;
+      vertical-align: middle;
+    }
+    .testomial-desc{
+      padding: 10px 0 0 45px;
+      font-size: 15px;
+
+      .nicole-txt{
+        color: $font-color-orange;
+        font-weight: 500;
+      }
+    }
+    .testimonial-first{
+      .testimony-text{
+        width: 80%;
+        border: 1px solid #ccc;
+        padding: 20px;
+        font-size: 15px;
+      }
+    }
+    .carousel-slide.swiper-slide{
+        height: 330px;
+    }
+  }
+  @include desktop{
+    .testimonal-content{
+      display: block;
+    }
+    .testimonial-carousel{
+      display: none;
+    }
+  }
+}
 .distributors-wrapper{
 
   .distributor-images{
@@ -416,6 +571,7 @@
       width: 99%;
       display: inline-block;
       text-align: center;
+      vertical-align: middle;
 
       img{
         max-width: 100px;
@@ -443,17 +599,60 @@
   background-color: #e3e3e3;
 
   .shipping-content{
-    padding: 40px 0 40px 0;
+    padding: 40px 0;
 
     .we-ship--text{
-      font-size: 19px;
+      font-size: 20px;
       font-weight: 400;
-      padding: 0 0 15px 0;
+      padding: 19px 0 0 10px;
+      text-align: left;
       color: $font-color-orange;
+      display: block;
+    }
+    .ship-mobile{
+      display: block;
+      height: 80px;
+      float: right;
+      margin: -119px 0 0 0;
+      padding: 46px 0;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+    .ship-desktop{
+      max-width: 200px;
+      margin-top: 20px;
+      display: none;
+    }
+    .within-us--div, .international-div{
+      padding: 0;
+      width: 60%;
     }
     .within-us--text, .international-text{
       color: $font-color-orange;
       padding: 0 0 8px 0;
+    }
+    .we-ship--text-dektop{
+      font-size: 19px;
+      font-weight: 400;
+      padding: 0 0 10px 0;
+      color: #f15c22;
+      text-align: left;
+      display: none;
+    }
+    .international-text, .within-us--text{
+      color: $font-color-orange;
+      padding: 0 0 8px 0;
+    }
+    .within-us--div{
+      width: 90%;
+      padding: 0 0 45px 15px;
+    }
+    .international-div{
+      padding: 0 15px;
     }
     p{
       color: $font-grey;
@@ -461,7 +660,22 @@
   }
   @include desktop{
     .shipping-content{
-      padding: 35px;
+
+      .we-ship--text-dektop{
+        padding: 0 0 15px 0;
+      }
+      .we-ship--text{
+        display: none;
+      }
+      .ship-mobile{
+        display: none;
+      }
+      .ship-desktop{
+        display: block;
+      }
+      .we-ship--text-dektop{
+        display: block;
+      }
     }
   }
 }

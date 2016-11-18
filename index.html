@@ -7,6 +7,7 @@
     <title>Practicum Exam</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/partials/swiper.min.css">
 
     <!-- CSS style -->
     <link rel="stylesheet" href="css/partials/_reset.css">
@@ -17,6 +18,8 @@
     <link rel="stylesheet" href="css/partials/_sections.css">
     <link rel="stylesheet" href="css/partials/_footer.css">
     <link rel="stylesheet" href="css/partials/_style.css">
+    <link rel="stylesheet" href="css/partials/_swiper.css">
+
   </head>
   <body>
   		<header>
@@ -257,26 +260,87 @@
       </section>
       <section class="testimonial-wrapper">
         <div class="container">
-          <div class="testimonal-content">
+          <div class="testimonal-content clearfix">
+            <p class="what-expert">This is what experts have to say about SimyskinTM</p>
             <div class="desktop-5">
-              <p>Lae, justo. Nullam dictum felis eu pede mollis pretium. Integer tindcunt. Cras dapilis. Vivamus elementum semper nisi. Aenean vulpate eleifend tellus.</p>
-              <div class="testiminal-img">
-                <img src="images/testimonial.png" alt="testimony" />
-                <p>Nicole Carmbell</p>
-                <p>Integer tincidunt Cras of Lo.</p>
+              <div class="testimonial-first">
+                <p class="testimony-text">Lae, justo. Nullam dictum felis eu pede mollis pretium. Integer tindcunt. Cras dapilis. Vivamus elementum semper nisi. Aenean vulpate eleifend tellus.</p>
+                <div id="triangle"></div>
+                <div class="testimonial-img clearfix">
+                  <div class="desktop-1">
+                    <img src="images/testimonial.png" class="testimony-img" alt="testimony">
+                  </div>
+                  <div class="desktop-9">
+                    <div class="testomial-desc">
+                      <p class="nicole-txt">Nicole Carmbell</p>
+                      <p>Integer tincidunt Cras of Lo.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="desktop-1">
-              <img src="images/product-testimonials.png" alt="" />
+              <img src="images/product-testimonials.png" class="prod-bottle" alt="product">
             </div>
             <div class="desktop-5">
-              <p>Lae, justo. Nullam dictum felis eu pede mollis pretium. Integer tindcunt. Cras dapilis. Vivamus elementum semper nisi. Aenean vulpate eleifend tellus.</p>
-              <div class="testiminal-img">
-                <img src="images/testimonial.png" alt="testimony" />
-                <p>Nicole Carmbell</p>
-                <p>Integer tincidunt Cras of Lo.</p>
+              <div class="testimonial-second">
+                <p class="testimony-txt">Lae, justo. Nullam dictum felis eu pede mollis pretium. Integer tindcunt. Cras dapilis. Vivamus elementum semper nisi. Aenean vulpate eleifend tellus.</p>
+                <div id="triangle"></div>
+                <div class="testimonial-img clearfix">
+                  <div class="desktop-1">
+                    <img src="images/testimonial.png" class="testimony-img" alt="testimony">
+                  </div>
+                  <div class="desktop-9">
+                    <div class="testomial-desc">
+                      <p class="nicole-txt">Nicole Carmbell</p>
+                      <p>Integer tincidunt Cras of Lo.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="testimonial-carousel">
+            <p class="what-expert">This is what experts have to say about SimyskinTM</p>
+            <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide carousel-slide">
+                          <div class="testimonial-first">
+                            <p class="testimony-text">Lae, justo. Nullam dictum felis eu pede mollis pretium. Integer tindcunt. Cras dapilis. Vivamus elementum semper nisi. Aenean vulpate eleifend tellus.</p>
+                            <div id="triangle"></div>
+                            <div class="testimonial-img clearfix">
+                              <div class="desktop-1 mobile-1">
+                                <img src="images/testimonial.png" class="testimony-img" alt="testimony">
+                              </div>
+                              <div class="desktop-9 mobile-10">
+                                <div class="testomial-desc">
+                                  <p class="nicole-txt">Nicole Carmbell</p>
+                                  <p>Integer tincidunt Cras of Lo.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-second">
+                          <p class="testimony-txt">Lae, justo. Nullam dictum felis eu pede mollis pretium. Integer tindcunt. Cras dapilis. Vivamus elementum semper nisi. Aenean vulpate eleifend tellus.</p>
+                          <div id="triangle"></div>
+                          <div class="testimonial-img clearfix">
+                            <div class="desktop-1 mobile-1">
+                              <img src="images/testimonial.png" class="testimony-img" alt="testimony">
+                            </div>
+                            <div class="desktop-9 mobile-10">
+                              <div class="testomial-desc">
+                                <p class="nicole-txt">Nicole Carmbell</p>
+                                <p>Integer tincidunt Cras of Lo.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+              </div>
           </div>
         </div>
       </section>
@@ -294,23 +358,26 @@
         </div>
       </section>
       <section class="shipping-wrapper">
-        <div class="container">
-            <div class="shipping-content clearfix">
-              <p class="we-ship--text">We ship worldwide!</p>
-              <div class="desktop-4 mobile-12">
-                <div class="within-us--div">
-                  <p class="within-us--text">WITHIN THE US</p>
-                  <p>Lae, justo. Nullam dictum felis eu pede mollis pretium. IntegerLae, justo. Nullam dictum felis eu pede mollis pretium. Integer</p>
-                </div>
-              </div>
-              <div class="desktop-4 mobile-12">
-                <div class="international-div">
-                  <p class="international-text">INTERNATIONAL SHIPPING</p>
-                  <p>Lae, justo. Nullam dictum felis eu pede mollis pretium. IntegerLae, justo. Nullam dictum felis eu pede mollis pretium. Integer</p>
-                </div>
+          <div class="shipping-content clearfix">
+            <p class="we-ship--text">We ship worldwide!</p>
+            <img src="images/shipping-icon.png" class="ship-mobile" alt="ship">
+            <div class="desktop-3 mobile-12">
+              <img src="images/shipping-icon.png" class="ship-desktop" alt="ship">
+            </div>
+            <div class="desktop-4  mobile-12">
+              <div class="within-us--div">
+                <p class="we-ship--text-dektop">We ship worldwide!</p>
+                <p class="within-us--text">WITHIN THE US</p>
+                <p>Lae, justo. Nullam dictum felis eu pede mollis pretium. IntegerLae, justo. Nullam dictum felis eu pede mollis pretium. Integer</p>
               </div>
             </div>
-        </div>
+            <div class="desktop-4 mobile-12">
+              <div class="international-div">
+                <p class="international-text">INTERNATIONAL SHIPPING</p>
+                <p>Lae, justo. Nullam dictum felis eu pede mollis pretium. IntegerLae, justo. Nullam dictum felis eu pede mollis pretium. Integer</p>
+              </div>
+            </div>
+          </div>
       </section>
       <section class="contact-wrapper">
         <div class="container">
@@ -341,5 +408,9 @@
           <p>© Copyright Simyskin</p>
         </div>
       </footer>
+
+      <!-- Swiper JS -->
+      <script src="js/swiper.min.js"></script>
+      <script src="js/_carousel.js"></script>
   </body>
  </html>

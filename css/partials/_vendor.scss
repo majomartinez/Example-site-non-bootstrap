@@ -1,13 +1,8 @@
 /*  ***************************
 /*  Media queries
 /*  ---------------------------
-/*  Default styling should be mobile first with
-/*  desktop and tablet specifics used to extend.
-/*
-/*  Usage:
-/*    @include <mixin> { }
-/*    eg. @include mobile { }
 *******************************/
+
 $media-mobile-small: "(max-width: 321px)";
 @mixin mobile-small { @media #{$media-mobile-small} { @content; } }
 
