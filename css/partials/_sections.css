@@ -445,6 +445,9 @@
   height: 60px;
   vertical-align: middle;
 }
+.testimonial-wrapper .testimonal-content .testimony-text, .testimonial-wrapper .testimonal-content .testimony-txt {
+  color: #7e8082;
+}
 .testimonial-wrapper .testimonal-content .testomial-desc {
   padding: 10px 0 0 45px;
 }
@@ -493,6 +496,9 @@
   position: absolute;
   top: -14px;
   left: -12px;
+}
+.testimonial-wrapper .testimonial-carousel .testimony-text, .testimonial-wrapper .testimonial-carousel .testimony-txt {
+  color: #7e8082;
 }
 .testimonial-wrapper .testimonial-carousel .testimony-text:before {
   content: "";

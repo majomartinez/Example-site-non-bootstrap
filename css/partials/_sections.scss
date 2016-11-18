@@ -495,6 +495,9 @@
       height: 60px;
       vertical-align: middle;
     }
+    .testimony-text, .testimony-txt{
+      color: $font-grey;
+    }
     .testomial-desc{
       padding: 10px 0 0 45px;
 
@@ -546,6 +549,9 @@
       position: absolute;
       top: -14px;
       left: -12px;
+    }
+    .testimony-text, .testimony-txt{
+      color: $font-grey;
     }
     .testimony-text:before {
         content: "";
