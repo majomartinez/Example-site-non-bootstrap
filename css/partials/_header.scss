@@ -1,0 +1,53 @@
+/* Header CSS */
+@import "_vendor";
+@import "_variables";
+
+.header-menu{
+  background: $background-color-main;
+  color: #fff;
+
+  .img-myskin.img{
+      max-width: 100px;
+      margin: 9px 10px;
+      width: 100%;
+    }
+    .target-text{
+      font-weight: 300;
+      font-size: 11px;
+      padding: 15px 10px;
+    }
+    .buynow-btn{
+      background: $font-color-orange;
+      text-align: center;
+      line-height: 56px;
+      text-decoration: none;
+      color: #fff;
+      display: none;
+    }
+    @include tablet{
+      .img-myskin.img{
+        margin: 9px 17px;
+      }
+      .buynow-btn{
+        display: block;
+      }
+      .target-text{
+        font-size: 17px;
+        line-height: 56px;
+        padding: 0;
+      }
+    }
+    @include desktop{
+      .buynow-btn{
+        display: block;
+      }
+      .target-text{
+        font-size: 17px;
+        line-height: 56px;
+        padding: 0;
+      }
+      .img-myskin.img{
+        margin: 9px 50px;
+      }
+    }
+}

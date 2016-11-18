@@ -1,0 +1,558 @@
+/* Sessions CSS */
+@import "_vendor";
+@import "_variables";
+
+.what-it-is--wrapper{
+  position: relative;
+
+  .what-it-is--pad{
+    padding: 0;
+  }
+  .bottle-img{
+    height: 320px;
+    margin: -94% 0 0 10%;
+  }
+  .key-factors--icon{
+    padding: 0;
+    margin: 35px 0;
+    list-style-type: none;
+
+    li{
+      width: 49%;
+      display: inline-block;
+      text-align: center;
+      padding: 0 0 20px 0;
+
+      p{
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .hero-content--intro-mobile{
+    display: block;
+    padding: 25px 0;
+
+    .hero-content--desc{
+      color: $font-grey;
+      padding: 15px 0;
+    }
+    a{
+      background: $font-color-orange;
+      text-align: center;
+      line-height: 56px;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 15px;
+    }
+    .hero-content--title{
+      color: $font-color-orange;
+      font-weight: 500px;
+      font-size: 25px;
+    }
+    .hero-content--div{
+      padding: 0 15px;
+    }
+  }
+  .key-factors{
+    .what-it-is--body{
+      padding: 0 15px;
+    }
+    .what-it-is--desc{
+      padding: 0 0 40px 0;
+      .what-it-is--body{
+
+      }
+      .what-is--title{
+        color: $font-color-orange;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      p{
+        color: $font-grey;
+      }
+    }
+    .what-do-you-need{
+      padding: 0 0 40px 0;
+
+      .what-do--title{
+          color: $font-color-orange;
+          font-weight: 500;
+          font-size: 25px;
+      }
+      p{
+        color: $font-grey;
+      }
+   }
+  .key-factors{
+      .what-it-is--body{
+        padding: 0;
+      }
+    }
+  }
+
+  @include desktop{
+    .hero-content--intro-mobile{
+      display: none;
+    }
+    .bottle-img{
+      height: 600px;
+    }
+    .what-it-is--pad{
+      padding: 0 75px 53px 75px;
+    }
+    .key-factors{
+      li{
+        width: 24%;
+      }
+      .what-do-you-need{
+        padding: 0;
+      }
+    }
+    .key-factors--icon{
+      li{
+        padding: 0;
+      }
+    }
+  }
+}
+.video-wrapper{
+  background: $background-color-submain;
+  margin: -2px 0 0 0;
+
+  h2{
+    text-align: center;
+    margin-top: 30px;
+    color: $font-color-orange;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .video-img{
+    max-width: 700px;
+    width: 100%;
+    margin: 25px auto;
+    display: block;
+  }
+
+  @include desktop{
+    .video-wrapper--content{
+      h2{
+        font-size: 17px;
+        font-weight: 500;
+      }
+    }
+  }
+
+}
+.phases-wrapper{
+
+  .container{
+    padding: 0;
+  }
+  .phases-div--boxes{
+    .phase-1, .phase-2, .phase-3{
+      padding: 0;
+
+      .phases-content{
+        padding: 30px 15px;
+
+          a{
+            background: #f15c22;
+            text-align: center;
+            line-height: 56px;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+          }
+          .phase-text{
+            color: $font-grey;
+            padding: 15px 0;
+          }
+       }
+    }
+    .phase-2{
+      border-left: none;
+      border-right: none;
+    }
+  }
+  h2{
+    text-align: center;
+    color: $font-color-orange;
+    padding: 40px 0;
+    font-weight: 500;
+    font-size: 19px;
+  }
+  span{
+    color: $font-color-orange;
+  }
+  .technology-wrapper{
+    padding: 70px 30px;
+
+    ul{
+      width: 99%;
+    }
+    .howdoes-wrapper{
+      padding: 10px 15px;
+
+      .howdoes-txt{
+        color: $font-color-orange;
+        font-weight: 500;
+        font-size: 19px;
+        padding: 0 0 20px 0;
+      }
+      .howdoes-wrapper--ul{
+        padding: 0 0 15px 0;
+        color: $font-color-orange;
+
+        li{
+          p{
+            color: $font-grey;
+          }
+        }
+      }
+      .howdoes-wrapper--ONE{
+        color: $font-color-orange;
+
+        li{
+          p{
+            color: $font-grey;
+          }
+        }
+      }
+      .system-text, .nano-text{
+        font-weight: 300;
+        font-size: 17px;
+        color: $font-color-orange;
+      }
+    }
+    .whatdoes-wrapper--ul{
+      .whatdoes-wrapper{
+        color: $font-color-orange;
+        margin: 0 0 0 15px;
+
+        li{
+          p{
+            color: $font-grey;
+          }
+        }
+      }
+      .whatdoes-txt{
+        color: $font-color-orange;
+        font-weight: 500;
+        font-size: 19px;
+        padding: 0 0 20px 0;
+      }
+    }
+  }
+
+  @include desktop{
+    .container{
+      padding: 0 15px;
+    }
+    .phases-div--boxes{
+      .phase-1, .phase-2, .phase-3{
+        padding: 0 30px;
+
+        .phases-content{
+          padding: 30px 0;
+        }
+      }
+      .phase-2{
+        border-left: 1px solid #dcd8d8;
+        border-right: 1px solid #dcd8d8;
+      }
+    }
+    .technology-wrapper{
+      ul{
+        width: 62%;
+      }
+      .howdoes-wrapper{
+        padding: 0;
+      }
+    }
+  }
+}
+.ingredients-wrapper{
+  background: url('../../images/ingredients-bg.png') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+
+  .ingredient-header{
+    text-align: center;
+    padding: 60px 0;
+  }
+  .bottle-side{
+    max-width: 305px;
+    position: absolute;
+    right: 0;
+    top: -65px;
+  }
+  .natural-img{
+    max-width: 80px;
+  }
+  .ingredients-text{
+    font-weight: 400;
+    font-size: 25px;
+    color: $font-color-orange;
+  }
+  .ingredients-content{
+      li{
+        padding: 0 0 30px 0;
+      }
+      ul{
+        width: 99%;
+        color: $font-color-orange;
+      }
+      p{
+        color: $font-grey;
+      }
+      .vitamins-div--two, .vitamins-div{
+        padding: 0 15px;
+      }
+  }
+  @include desktop{
+    .ingredients-content{
+      padding: 0 30px;
+
+      .ingredient-title{
+        color: $font-color-orange;
+      }
+      .bottle-side{
+          max-width: 400px;
+          top: -79px;
+      }
+      .ingredient-header{
+        padding: 45px 0;
+      }
+      ul{
+        width: 62%;
+      }
+      .vitamins-div--two, .vitamins-div{
+        padding: 0;
+      }
+    }
+    .bottle-side{
+      max-width: 400px;
+      top: -82px;
+    }
+    .ingredients-text{
+      font-size: 20px;
+    }
+  }
+}
+.result-wrapper{
+  background: url('../../images/results-bg.png') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+
+  .container{
+    padding: 0;
+  }
+  img{
+    max-width: 300px;
+  }
+  .before-after--div{
+    padding: 75px 0;
+
+    .before-content, .after-content{
+      text-align: center;
+    }
+    .before-txt, .after-text{
+      color: $font-color-orange;
+      font-weight: 400;
+      padding: 0 0 20px 0;
+    }
+    .after-text{
+      padding: 15px 20px;
+    }
+  }
+  .visible-desc, .return-desc{
+    padding: 30px 15px;
+  }
+  .visible-txt, .return-txt{
+    padding: 0 0 10px 0;
+    color: $font-color-orange;
+    font-size: 23px;
+  }
+  @include desktop{
+    .container{
+      padding: 0 15px;
+    }
+    img{
+      max-width: 400px;
+    }
+    .visible-txt, .return-txt{
+      font-size: 18px;
+    }
+  }
+}
+.distributors-wrapper{
+
+  .distributor-images{
+    margin: 0;
+
+    .skin-text{
+      text-align: center;
+      font-weight: 500;
+      font-size: 18px;
+      color: $font-color-orange;
+    }
+  }
+  .distributor-ul{
+    padding: 0;
+    margin: 35px 0;
+    list-style-type: none;
+    text-align: center;
+
+    li{
+      width: 99%;
+      display: inline-block;
+      text-align: center;
+
+      img{
+        max-width: 100px;
+      }
+    }
+    .amazon-img{
+      margin: 10px 0;
+    }
+  }
+  @include desktop{
+    .distributor-images{
+      margin: 55px 0 0 0;
+    }
+    .distributor-ul{
+      li{
+        width: 24%;
+        img{
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}
+.shipping-wrapper{
+  background-color: #e3e3e3;
+
+  .shipping-content{
+    padding: 40px 0 40px 0;
+
+    .we-ship--text{
+      font-size: 19px;
+      font-weight: 400;
+      padding: 0 0 15px 0;
+      color: $font-color-orange;
+    }
+    .within-us--text, .international-text{
+      color: $font-color-orange;
+      padding: 0 0 8px 0;
+    }
+    p{
+      color: $font-grey;
+    }
+  }
+  @include desktop{
+    .shipping-content{
+      padding: 35px;
+    }
+  }
+}
+.contact-wrapper{
+  background: $background-color-submain;
+
+  .contact-content{
+    text-align: left;
+    padding: 60px 0;
+
+    a{
+      background: $font-color-orange;
+      text-align: center;
+      line-height: 56px;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 15px;
+    }
+    .title-content{
+      color: $font-color-orange;
+      padding: 0 0 15px 0;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .content-desc{
+      color: $font-grey;
+      padding: 0 0 20px 0;
+    }
+  }
+  @include desktop{
+    .contact-content{
+      text-align: center;
+    }
+  }
+}
+.order-free-wrapper{
+  background: $background-color-main;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+
+  .order-free-div{
+    text-align: left;
+  }
+  img{
+    height: 130px;
+    position: absolute;
+    top: 89px;
+    right: 25px;
+  }
+  a{
+    background: $font-color-orange;
+    text-align: center;
+    line-height: 56px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+  .try-now{
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0 0 15px 0;
+  }
+  @include desktop{
+    img{
+      height: 400px;
+      top: -171px;
+      right: 184px;
+    }
+    a{
+      padding: 10px 15px;
+    }
+    .try-now{
+      font-size: 24px;
+    }
+    .order-free-div{
+      text-align: center;
+    }
+  }
+}
+.footer-wrapper{
+  background: $background-color-main;
+  border-top: 1px solid #fff;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+
+  p{
+    text-align: center;
+    margin: 20px 0;
+  }
+}
